@@ -1,11 +1,13 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class DiverseArrayTest {
+
+public class DiverseArrayTest {
 
     @Test
-    void arraySumOne() {
+    public void arraySumOne() {
 
         int[] arr1 = {1,3,2,7,3};
         assertEquals(16, DiverseArray.arraySum(arr1));
@@ -13,7 +15,7 @@ class DiverseArrayTest {
     }
 
     @Test
-    void arraySumTwo() {
+    public void arraySumTwo() {
 
         int[] arr1 = {11,31,21,17,13};
         assertEquals(93, DiverseArray.arraySum(arr1));
@@ -21,7 +23,7 @@ class DiverseArrayTest {
     }
 
     @Test
-    void arraySumThree() {
+    public void arraySumThree() {
 
         int[] arr1 = {};
         assertEquals(0, DiverseArray.arraySum(arr1));
@@ -30,7 +32,7 @@ class DiverseArrayTest {
 
 
     @Test
-    void rowSumsOne() {
+    public void rowSumsOne() {
 
         int[][] array2d = {
                 {1, 3, 2, 7, 3},
@@ -50,7 +52,7 @@ class DiverseArrayTest {
     }
 
     @Test
-    void rowSumsTwo() {
+    public void rowSumsTwo() {
 
         int[][] array2d = {
                 {10, 3, 2, 17, -3},
@@ -70,7 +72,7 @@ class DiverseArrayTest {
     }
 
     @Test
-    void isDiverseOne() {
+    public void isDiverseOne() {
 
         int[][] array2d = {
                 {1, 3, 2, 7, 3},
@@ -84,7 +86,7 @@ class DiverseArrayTest {
     }
 
     @Test
-    void isDiverseTwo() {
+    public void isDiverseTwo() {
 
         int[][] array2d = {
                 {1, 1, 5, 3, 4},
